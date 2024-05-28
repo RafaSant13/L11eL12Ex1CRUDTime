@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cadastro Futebol</string>
+    <string name="time">Time</string>
+    <string name="jogador">Jogador</string>
+    <string name="home">Bem vindo ao sistema!</string>
+    <string name="codigo">Código</string>
+    <string name="nome">Nome</string>
+    <string name="cidade">Cidade</string>
+    <string name="id">ID</string>
+    <string name="dataNasc">Data de Nascimento</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="inserir">Inserir</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="apagar">Apagar</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+
+</resources>
