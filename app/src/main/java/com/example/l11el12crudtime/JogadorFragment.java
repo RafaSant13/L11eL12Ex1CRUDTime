@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,8 @@ public class JogadorFragment extends Fragment {
         btnApagarJogador = view.findViewById(R.id.btnApagarJogador);
         btnListarJogador = view.findViewById(R.id.btnListarJogador);
         tvJogador = view.findViewById(R.id.tvJogador);
+        tvJogador.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        tvJogador.setMovementMethod(new ScrollingMovementMethod());
 
         btnBuscarJogador.setOnClickListener(op -> buscar());
         btnInserirJogador.setOnClickListener(op -> inserir());
@@ -60,7 +63,7 @@ public class JogadorFragment extends Fragment {
     }
 
     private void buscar() {
-        
+
     }
 
     private void inserir() {
