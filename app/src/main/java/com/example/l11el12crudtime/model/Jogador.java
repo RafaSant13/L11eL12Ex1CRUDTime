@@ -1,10 +1,12 @@
 package com.example.l11el12crudtime.model;
 
+import java.time.LocalDate;
+
 public class Jogador {
 
     private int id;
     private String nome;
-    private String dataNasc;
+    private LocalDate dataNasc;
     private float altura;
     private float peso;
     private Time time;
@@ -28,11 +30,11 @@ public class Jogador {
         this.nome = nome;
     }
 
-    public String getDataNasc() {
+    public LocalDate getDataNasc() {
         return dataNasc;
     }
 
-    public void setDataNasc(String dataNasc) {
+    public void setDataNasc(LocalDate dataNasc) {
         this.dataNasc = dataNasc;
     }
 
@@ -62,13 +64,6 @@ public class Jogador {
 
     @Override
     public String toString() {
-        return "Jogador{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", dataNasc='" + dataNasc + '\'' +
-                ", altura=" + altura +
-                ", peso=" + peso +
-                ", time=" + time.getNome() +
-                '}';
+        return "#"+id+" "+nome + " - "+dataNasc+ " - "+altura + "m - "+peso+"kg - "+time.getNome();
     }
 }
